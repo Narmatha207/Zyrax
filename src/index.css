@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-zyrax-dark: #0A192F;
+  --color-zyrax-navy: #112240;
+  --color-zyrax-orange: #FF8C00;
+  --color-zyrax-orange-light: #FFA500;
+  --color-zyrax-white: #FFFFFF;
+}
+
+@layer base {
+  body {
+    @apply bg-zyrax-dark text-white font-sans antialiased;
+  }
+}
+
+.bg-luxury-orange {
+  @apply bg-gradient-to-r from-[#FF8C00] to-[#FF4500];
+}
+
+.text-luxury-orange {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#FF8C00] to-[#FF4500];
+}
+
+.glass {
+  @apply bg-white/10 backdrop-blur-lg border border-white/20;
+}
+
+.glass-dark {
+  @apply bg-black/30 backdrop-blur-xl border border-white/10;
+}
+
+.neon-glow {
+  box-shadow: 0 0 15px rgba(255, 46, 136, 0.4);
+}
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(255, 46, 136, 0.6);
+}

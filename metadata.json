@@ -1,0 +1,8 @@
+{
+  "name": "Zyrax",
+  "description": "A futuristic AI-powered fashion design platform for generating and customizing garments.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
